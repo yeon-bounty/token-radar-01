@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Radar — pre-token protocols, ranked by implied value</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="logo"><span class="logo-dot" aria-hidden="true"></span>Token&nbsp;Radar</div>
+    <div class="masthead-meta" id="masthead-meta"></div>
+  </div>
+</header>
+
+<main class="page">
+  <section class="hero" id="hero" aria-label="Top of the board"></section>
+
+  <div class="layout">
+    <div class="main-col">
+      <section class="toolbar" aria-label="Board controls">
+        <input id="search" type="search" placeholder="Search protocol, category or chain…" aria-label="Search the board" autocomplete="off">
+        <select id="category" aria-label="Filter by category"></select>
+        <label class="check"><input id="watchlist-only" type="checkbox"> Watchlist only</label>
+        <select id="sort" aria-label="Sort the board">
+          <option value="implied">Sort: implied value</option>
+          <option value="tvl">Sort: TVL</option>
+          <option value="growth">Sort: 7-day growth</option>
+          <option value="age">Sort: age</option>
+          <option value="name">Sort: name</option>
+        </select>
+        <div class="tabs" role="tablist" aria-label="Token status">
+          <button id="tab-pre" type="button" role="tab" aria-selected="true">Pre-token</button>
+          <button id="tab-live" type="button" role="tab" aria-selected="false">Live token</button>
+        </div>
+        <span class="rowcount" id="rowcount"></span>
+      </section>
+
+      <section class="board" id="board" aria-label="Ranked board"></section>
+      <section class="live" id="live" aria-label="Live-token protocols" hidden></section>
+    </div>
+
+    <aside class="side-col">
+      <section class="card" id="model-card" aria-label="How implied value is computed"></section>
+      <section class="card" id="multiples-card" aria-label="Category multiples"></section>
+      <section class="card" id="chart-card" aria-label="Implied value by category"></section>
+    </aside>
+  </div>
+
+  <footer class="foot">
+    <p>Implied value is a model of what a token could be worth, built only from this snapshot's
+    figures. It is not a price, a prediction, or financial advice. Farm plans describe what a
+    position would cost and how long it takes; they are not a promise of an airdrop.</p>
+  </footer>
+</main>
+
+<aside class="drawer" id="drawer" aria-label="Protocol detail" hidden></aside>
+<div class="scrim" id="scrim" hidden></div>
+
+<script src="../data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
