@@ -1,6 +1,8 @@
 # Token Radar — pre-token protocols, ranked by implied value
 
 [![token-radar-01](https://make.fun/badge/token-radar-01.svg)](https://make.fun/c/token-radar-01)
+[![token-radar-01 rank](https://make.fun/badge/token-radar-01/yeon-bounty/token-radar-01/rank.svg)](https://make.fun/bounty/token-radar-01)
+[![token-radar-01 reward](https://make.fun/badge/token-radar-01/yeon-bounty/token-radar-01/reward.svg)](https://make.fun/bounty/token-radar-01)
 
 A token launch radar: it reads a snapshot of the protocol universe (758 protocols,
 40 on a watchlist, floor $50M TVL) and ranks the pre-token protocols by an implied
